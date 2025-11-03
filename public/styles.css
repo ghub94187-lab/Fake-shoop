@@ -1,0 +1,46 @@
+body {
+    background: linear-gradient(to bottom, #f0f2f5, #e0e4e8);
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+.product-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.request-counter {
+    font-weight: bold;
+    color: #495057;
+}
+
+.crash-message {
+    color: #dc3545;
+    font-size: 1.2em;
+}
+
+.admin-table th, .admin-table td {
+    text-align: center;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.nav-tabs .nav-link {
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .row-cols-md-2 {
+        --bs-columns: 1;
+    }
+}
